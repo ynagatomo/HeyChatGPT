@@ -35,20 +35,45 @@ First you are given free credits. When it is used up, it is necessary to subscri
 - Users can listen answers by voice.
 - Users can see their interaction history.
 
-![Image](assets/ui_1600.png)
-<!--
-![GIF](assets/movie.gif)
--->
+### Usage
 
-<!--
-## Preparation
+1. Ask questions by voice.
+1. Send the questions to OpenAI ChatGPT.
+1. View or hear the answers from OpenAI ChatGPT.
+
+![Image](assets/ui_1600.png)
+<!-- ![GIF](assets/movie.gif) -->
+
+## Preparation to build and run the project
+
+### OpenAISwift Library
+
+Import the adamrushy/OpenAISwift Swift Package. URL: https://github.com/adamrushy/OpenAISwift
 
 ### Getting the OpenAI API Key
 
-### Add the API key file
+The API Key for OpenAI API is required.
+You need to sign up to OpenAI site (https://openai.com/api/) and get the key.
+You can get the key at the account management page. (https://platform.openai.com/account/)
+
+### Add the API key file to the project
+
+Add `APIKey.swift` file to the project and define the key you got as below.
+
+```swift
+// APIKey.swift
+enum OpenAIAPIKey {
+    static let key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+```
 
 ### Check your credits
 
+To use the OpenAI API, you need credits. You will get some free credits when you sign up.
+After using it, you need to purchase a paid subscription.
+If there are no valid credits, the API will return error 1.
+
+<!--
 ## Design
 
 ### Type Structure
@@ -58,13 +83,14 @@ The app consists of simple SwiftUI Views, UIKit Views, UIViewController, and Dat
 ![Image](assets/type.png)
 -->
 
-<!--
 ## References
 
-- Apple 
-- Apple Documentation
-- Apple Documentation
--->
+- API: OpenAI API: https://openai.com/api/
+- Library: adamrushy/OpenAISwift Swift Package: https://github.com/adamrushy/OpenAISwift
+- Article: Moritz Philip Reche, Feb 14, 2023, Creating a SwiftUI App to interact with the OpenAI ChatGPT API, https://www.createwithswift.com/building-a-swiftui-app-to-interact-with-the-openai-chatgpt-api/
+- Apple Sample Code: Recognizing Speech in Live Audio, https://developer.apple.com/documentation/speech/recognizing_speech_in_live_audio
+- Apple Documentation: AVFoundation / Speech Synthesis, https://developer.apple.com/documentation/avfoundation/speech_synthesis
+- Apple Documentation: Speech, https://developer.apple.com/documentation/speech
 
 ## License
 
