@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HistoryView: View {
     @Environment(\.dismiss) private var dismiss
-    @ObservedObject var conversation: Conversation
+    let talkLogs: [Conversation.Dialog]
 
     var body: some View {
         ZStack {
@@ -26,7 +26,8 @@ struct HistoryView: View {
                     }
                 }
                 ScrollView {
-                    ForEach(conversation.talkLogs) { log in
+//                    ForEach(conversation.talkLogs) { log in
+                    ForEach(talkLogs) { log in
                         HStack {
                             Spacer()
                             Text(log.question)
@@ -59,8 +60,11 @@ struct HistoryView: View {
 }
 
 struct HistoryView_Previews: PreviewProvider {
-    @StateObject static var conversation = Conversation()
+    static let talkLogs: [Conversation.Dialog] = [
+        Conversation.Dialog(question: "My first question.", answer: "AI's answer."),
+        Conversation.Dialog(question: "My 2nd question.", answer: "AI's answer.")
+    ]
     static var previews: some View {
-        HistoryView(conversation: conversation)
+        HistoryView(talkLogs: talkLogs)
     }
 }

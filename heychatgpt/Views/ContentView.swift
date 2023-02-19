@@ -129,7 +129,7 @@ struct ContentView: View {
         } // ZStack
         .foregroundColor(.white)
         .sheet(isPresented: $showHistory) {
-            HistoryView(conversation: conversation)
+            HistoryView(talkLogs: conversation.talkLogs)
         }
     }
 
