@@ -31,9 +31,15 @@ First you are given free credits. When it is used up, it is necessary to subscri
 ### Features
 
 - Users can input questions by voice.
-- Users can get answers for the questions from ChatGTP, OpenAI's language AI.
+- Users can get answers for the questions from ChatGPT, OpenAI's language AI.
 - Users can listen answers by voice.
 - Users can see their interaction history.
+
+* Language: This project supports English (en-US) for voice-recognition and speech synthesis.
+You can switch to other language modifying the code.
+
+* OpenAI LLM: This project uses the text-davinci-003 GPT-3 model by default.
+You can switch to other models such as text-curie-001, text-babbage-001, or text-ada-001 (fastest one), modifying the code.
 
 ### Usage
 
@@ -46,11 +52,11 @@ First you are given free credits. When it is used up, it is necessary to subscri
 
 ## Preparation to build and run the project
 
-### OpenAISwift Library
+### Import the OpenAISwift Library
 
-Import the adamrushy/OpenAISwift Swift Package. URL: https://github.com/adamrushy/OpenAISwift
+Import the adamrushy/OpenAISwift Swift Package to the project. URL: https://github.com/adamrushy/OpenAISwift
 
-### Getting the OpenAI API Key
+### Get the OpenAI API Key
 
 The API Key for OpenAI API is required.
 You need to sign up to OpenAI site (https://openai.com/api/) and get the key.
@@ -71,7 +77,30 @@ enum OpenAIAPIKey {
 
 To use the OpenAI API, you need credits. You will get some free credits when you sign up.
 After using it, you need to purchase a paid subscription.
-If there are no valid credits, the API will return error 1.
+It is reasonable because the computational cost of LLM is very high.
+
+If there are no valid credits, the OpenAISwift API will return error 1.: 
+`The operation could't be completed. (OpenAISwift.OpenAIError error 1)`
+
+## Considerations
+
+### Large Language Models
+
+The project uses the GPT-3 LLM, text-davinci-003, by default.
+You can switch to another model specifying the model when calling the OpenAISwift API;
+
+`func sendCompletion(with prompt: String, model: OpenAIModelType = .gpt3(.davinci), maxTokens: Int = 16) async throws -> OpenAI`
+
+![Image](assets/models_1280.jpeg)
+(c)OpenAI (https://platform.openai.com/docs/models/)
+
+### Supported Language for voice recognition and speech synthesis
+
+The project supports English (en-US) by default.
+You can switch to other ones to specify it when calling APIs.
+
+- `SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!`
+- `AVSpeechSynthesisVoice(language: "en-US") // BCP47 language code`
 
 <!--
 ## Design
