@@ -26,7 +26,6 @@ struct HistoryView: View {
                     }
                 }
                 ScrollView {
-//                    ForEach(conversation.talkLogs) { log in
                     ForEach(talkLogs) { log in
                         HStack {
                             Spacer()

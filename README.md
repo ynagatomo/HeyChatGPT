@@ -102,15 +102,14 @@ You can switch to other ones to specify it when calling APIs.
 - `SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!`
 - `AVSpeechSynthesisVoice(language: "en-US") // BCP47 language code`
 
-<!--
 ## Design
 
-### Type Structure
+### Type Structure and State Machines
 
-The app consists of simple SwiftUI Views, UIKit Views, UIViewController, and Data types (Model types).
+The app consists of simple SwiftUI Views, a View Model, Managers.
 
-![Image](assets/type.png)
--->
+![Image](assets/types_1280.png)
+
 
 ## References
 

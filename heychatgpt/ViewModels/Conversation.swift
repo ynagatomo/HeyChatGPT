@@ -20,7 +20,6 @@ final class Conversation: ObservableObject {
     @Published var prompt = ""      // input text
     @Published var question = ""
     @Published var answer = ""
-//    @Published var talkLogs = [(question: String, answer: String)]()
     @Published var talkLogs = [Dialog]()
     @Published var state: State = .idle
 
@@ -48,7 +47,6 @@ final class Conversation: ObservableObject {
         prompt = Self.initPrompt
 
         answer = await ChatManager.shared.sendText(question)
-//        talkLogs.append((question: question, answer: answer))
         talkLogs.append(Dialog(question: question, answer: answer))
 
         state = .idle
