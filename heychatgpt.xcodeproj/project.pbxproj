@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA18D0AA29A20A6700CE4B1C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18D0A929A20A6700CE4B1C /* HistoryView.swift */; };
+		BAA730A529A07289000AC482 /* heychatgptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA730A429A07289000AC482 /* heychatgptApp.swift */; };
+		BAA730A729A07289000AC482 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA730A629A07289000AC482 /* ContentView.swift */; };
+		BAA730A929A0728A000AC482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA730A829A0728A000AC482 /* Assets.xcassets */; };
+		BAA730AC29A0728A000AC482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA730AB29A0728A000AC482 /* Preview Assets.xcassets */; };
+		BAA730B629A07604000AC482 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA730B529A07604000AC482 /* ChatManager.swift */; };
+		BAA730B829A07694000AC482 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA730B729A07694000AC482 /* APIKey.swift */; };
+		BAA730BE29A0819F000AC482 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA730BD29A0819F000AC482 /* Conversation.swift */; };
+		BAB095CC29A0A14B002A148E /* Synthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB095CB29A0A14B002A148E /* Synthesizer.swift */; };
+		BAB095CE29A0B2CB002A148E /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB095CD29A0B2CB002A148E /* SpeechRecognizer.swift */; };
+		BAB095D329A0C71E002A148E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB095D229A0C71E002A148E /* Log.swift */; };
+		BAB095D629A0CC15002A148E /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = BAB095D529A0CC15002A148E /* OpenAISwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA18D0A929A20A6700CE4B1C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		BA18D0AB29A219F700CE4B1C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BAA730A129A07289000AC482 /* heychatgpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heychatgpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA730A429A07289000AC482 /* heychatgptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heychatgptApp.swift; sourceTree = "<group>"; };
+		BAA730A629A07289000AC482 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAA730A829A0728A000AC482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAA730AB29A0728A000AC482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAA730B529A07604000AC482 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		BAA730B729A07694000AC482 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		BAA730BD29A0819F000AC482 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		BAB095CB29A0A14B002A148E /* Synthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synthesizer.swift; sourceTree = "<group>"; };
+		BAB095CD29A0B2CB002A148E /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		BAB095D029A0C552002A148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAB095D229A0C71E002A148E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAA7309E29A07289000AC482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB095D629A0CC15002A148E /* OpenAISwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAA7309829A07289000AC482 = {
+			isa = PBXGroup;
+			children = (
+				BA18D0AB29A219F700CE4B1C /* README.md */,
+				BAA730A329A07289000AC482 /* heychatgpt */,
+				BAA730A229A07289000AC482 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAA730A229A07289000AC482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730A129A07289000AC482 /* heychatgpt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA730A329A07289000AC482 /* heychatgpt */ = {
+			isa = PBXGroup;
+			children = (
+				BAB095D029A0C552002A148E /* Info.plist */,
+				BAA730BA29A08145000AC482 /* App */,
+				BAA730B929A08136000AC482 /* Views */,
+				BAA730BC29A08168000AC482 /* ViewModels */,
+				BAA730BB29A08154000AC482 /* Managers */,
+				BAB095D129A0C70E002A148E /* Utilities */,
+				BAA730A829A0728A000AC482 /* Assets.xcassets */,
+				BAA730AA29A0728A000AC482 /* Preview Content */,
+			);
+			path = heychatgpt;
+			sourceTree = "<group>";
+		};
+		BAA730AA29A0728A000AC482 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730AB29A0728A000AC482 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAA730B929A08136000AC482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730A629A07289000AC482 /* ContentView.swift */,
+				BA18D0A929A20A6700CE4B1C /* HistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAA730BA29A08145000AC482 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730A429A07289000AC482 /* heychatgptApp.swift */,
+				BAA730B729A07694000AC482 /* APIKey.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BAA730BB29A08154000AC482 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730B529A07604000AC482 /* ChatManager.swift */,
+				BAB095CB29A0A14B002A148E /* Synthesizer.swift */,
+				BAB095CD29A0B2CB002A148E /* SpeechRecognizer.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BAA730BC29A08168000AC482 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BAA730BD29A0819F000AC482 /* Conversation.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BAB095D129A0C70E002A148E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BAB095D229A0C71E002A148E /* Log.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAA730A029A07289000AC482 /* heychatgpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA730AF29A0728A000AC482 /* Build configuration list for PBXNativeTarget "heychatgpt" */;
+			buildPhases = (
+				BAA7309D29A07289000AC482 /* Sources */,
+				BAA7309E29A07289000AC482 /* Frameworks */,
+				BAA7309F29A07289000AC482 /* Resources */,
+				BAB095CF29A0C39C002A148E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = heychatgpt;
+			packageProductDependencies = (
+				BAB095D529A0CC15002A148E /* OpenAISwift */,
+			);
+			productName = heychatgpt;
+			productReference = BAA730A129A07289000AC482 /* heychatgpt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAA7309929A07289000AC482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BAA730A029A07289000AC482 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BAA7309C29A07289000AC482 /* Build configuration list for PBXProject "heychatgpt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAA7309829A07289000AC482;
+			packageReferences = (
+				BAB095D429A0CC15002A148E /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
+			productRefGroup = BAA730A229A07289000AC482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA730A029A07289000AC482 /* heychatgpt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAA7309F29A07289000AC482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA730AC29A0728A000AC482 /* Preview Assets.xcassets in Resources */,
+				BAA730A929A0728A000AC482 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAB095CF29A0C39C002A148E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA7309D29A07289000AC482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB095CC29A0A14B002A148E /* Synthesizer.swift in Sources */,
+				BAB095CE29A0B2CB002A148E /* SpeechRecognizer.swift in Sources */,
+				BAB095D329A0C71E002A148E /* Log.swift in Sources */,
+				BAA730B629A07604000AC482 /* ChatManager.swift in Sources */,
+				BAA730A729A07289000AC482 /* ContentView.swift in Sources */,
+				BAA730B829A07694000AC482 /* APIKey.swift in Sources */,
+				BAA730BE29A0819F000AC482 /* Conversation.swift in Sources */,
+				BA18D0AA29A20A6700CE4B1C /* HistoryView.swift in Sources */,
+				BAA730A529A07289000AC482 /* heychatgptApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAA730AD29A0728A000AC482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAA730AE29A0728A000AC482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAA730B029A0728A000AC482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"heychatgpt/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = heychatgpt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hey ChatGPT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app will use a microphone to recognize your talk.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "The app will use the function to recognize your talk.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.heychatgpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA730B129A0728A000AC482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"heychatgpt/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = heychatgpt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hey ChatGPT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app will use a microphone to recognize your talk.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "The app will use the function to recognize your talk.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.heychatgpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAA7309C29A07289000AC482 /* Build configuration list for PBXProject "heychatgpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA730AD29A0728A000AC482 /* Debug */,
+				BAA730AE29A0728A000AC482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA730AF29A0728A000AC482 /* Build configuration list for PBXNativeTarget "heychatgpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA730B029A0728A000AC482 /* Debug */,
+				BAA730B129A0728A000AC482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAB095D429A0CC15002A148E /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAB095D529A0CC15002A148E /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAB095D429A0CC15002A148E /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAA7309929A07289000AC482 /* Project object */;
+}
